@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@keyframes typing {
+    0% {
+      width: 0; /* Start typing from the first letter */
+    }
+    90% {
+      width: 100%; /* Fully typed text */
+    }
+    100% {
+      width: 0; /* Reset to restart */
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent; /* Make the cursor disappear momentarily */
+    }
+  }
+  
+  .animate-typing {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid orange; /* Cursor effect */
+    animation: typing 6s steps(30, end) infinite, blink 0.6s step-end infinite;
+    width: 0; /* Start at 0 width */
+  }
+  
+  
+  @keyframes scroll {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-scroll {
+    animation: scroll 1.5s ease-in-out;
+  }
+  
