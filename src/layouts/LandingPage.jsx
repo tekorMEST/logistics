@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import InfoSection from '../components/InfoSection';
 import AboutUs from '../components/About';
 import MessageMe from '../components/Message';
+import Footer from '../components/Footer';
 
 const LandingPage = () => {
   return (
@@ -11,6 +12,7 @@ const LandingPage = () => {
       <InfoSection/>
       <AboutUs/>
       <MessageMe/>
+      <Footer/>
      
       
 

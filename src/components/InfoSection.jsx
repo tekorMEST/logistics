@@ -8,6 +8,9 @@ import {
   FaBox,
   FaGlobe,
   FaWarehouse,
+  FaTwitter,
+  
+  FaInstagram
 } from "react-icons/fa";
 import BackgroundImage from "../assets/images/port.jpg"; // Replace with the correct path to your image
 
@@ -38,7 +41,7 @@ const InfoSection = () => {
         <div className="flex items-center space-x-3 mb-4 md:mb-0">
           <FaClock className="text-3xl md:text-4xl text-orange-500" />
           <div>
-            <h3 className="font-bold text-sm md:text-lg font-poppins">
+            <h3  id= "#opening"className="font-bold text-sm md:text-lg font-poppins">
               OPENING HOURS
             </h3>
             <p className="text-xs md:text-sm">Monday - Friday</p>
@@ -50,7 +53,7 @@ const InfoSection = () => {
         <div className="flex items-center space-x-3 mb-4 md:mb-0">
           <FaPhoneAlt className="text-3xl md:text-4xl text-orange-500" />
           <div>
-            <h3 className="font-bold text-sm md:text-lg font-poppins">
+            <h3  id= "#call"className="font-bold text-sm md:text-lg font-poppins">
               CALL US
             </h3>
             <p className="text-xs md:text-sm">+359 899 97 75 40</p>
@@ -58,15 +61,29 @@ const InfoSection = () => {
         </div>
 
         {/* Third Column */}
-        <div className="flex items-center space-x-3 mb-4 md:mb-0">
-          <FaEnvelope className="text-3xl md:text-4xl text-orange-500" />
-          <div>
-            <h3 className="font-bold text-sm md:text-lg font-poppins">
-              EMAIL US
-            </h3>
-            <p className="text-xs md:text-sm">office@chs-bg.com</p>
-          </div>
-        </div>
+<div className="flex items-center space-x-3 mb-4 md:mb-0">
+  <FaEnvelope className="text-3xl md:text-4xl text-orange-500" />
+  <div>
+    <h3 id="#email" className="font-bold text-sm md:text-lg font-poppins">
+      EMAIL US
+    </h3>
+    <p className="text-xs md:text-sm">office@chs-bg.com</p>
+  </div>
+  <div>
+    <h3 id="#social-media" className="font-bold text-sm md:text-lg font-poppins">
+      REACH US ON SOCIAL MEDIA
+    </h3>
+    <div className="flex items-center space-x-2">
+      <FaTwitter className="text-2xl text-blue-500" />
+      <p className="text-xs md:text-sm"> @Aymalloum_L</p>
+    </div>
+    <div className="flex items-center space-x-2">
+      <FaInstagram className="text-2xl text-pink-500" />
+      <p className="text-xs md:text-sm"> @aymalloumlogistics</p>
+    </div>
+  </div>
+</div>
+
 
         {/* Button */}
         <Link to="me" className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 md:px-6 rounded text-sm md:text-base">
@@ -76,12 +93,12 @@ const InfoSection = () => {
 
       {/* Bottom White Section with Cards */}
       <div className="bg-white py-16 px-4 sm:px-6 lg:py-24 lg:px-8 mt-12">
-        <h2 className="text-center text-3xl sm:text-4xl font-extrabold text-blue-900 mb-8 sm:mb-12 font-poppins">
+        <h2 id= 'info-section'className="text-center text-3xl sm:text-4xl font-extrabold text-blue-900 mb-8 sm:mb-12 font-poppins">
           Our Services
         </h2>
 
         {/* Service Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+        <div  className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {/* Card 1 */}
           <div className="bg-gray-100 shadow-lg rounded-lg p-6 text-center hover:bg-blue-50 transition">
             <FaTruck className="text-5xl sm:text-6xl text-orange-500 mx-auto mb-4" />
